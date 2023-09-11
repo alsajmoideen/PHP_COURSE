@@ -3,7 +3,7 @@
 $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = '';
-$db = "testdb";
+$db = "testdb"; // <--------------------------------------- YOUR DATABASE NAME ---------------------------------------
 
 // Connect to MySQL Database
 $conn = mysqli_connect($dbhost,$dbuser,$dbpass);

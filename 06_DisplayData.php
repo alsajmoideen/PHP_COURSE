@@ -3,7 +3,7 @@
 $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = '';
-$db = "testdb";
+$db = "testdb"; // <--------------------------------------- YOUR DATABASE NAME ---------------------------------------
 
 $conn = mysqli_connect($dbhost,$dbuser,$dbpass,$db);
 if($conn->connect_error){
@@ -13,7 +13,7 @@ if($conn->connect_error){
 echo "Connection Success<br>";
 
 // SQL Query
-$sql = 'SELECT * FROM EMPLOYEE';
+$sql = 'SELECT * FROM EMPLOYEE'; // <-------------------- YOUR TABLE NAME --------------------
 
 // Table Display Here
 if(mysqli_query($conn,$sql)){

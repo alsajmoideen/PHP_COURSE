@@ -12,12 +12,14 @@ if($conn->connect_error){
 
 echo "Connection Success<br>";
 
-// SQL Query
-$sql = 'INSERT INTO EMPLOYEE(EMP_NAME,EMP_ADDRESS,EMP_SALARY,JOIN_DATE) VALUES("ALSAJ","NELLIMATTATHIL",2000,NOW())'; // <-- YOUR TABLE NAME ---
+$emp_id = 3;
 
-// Table Insertion Here
+// SQL Query
+$sql = "DELETE FROM EMPLOYEE WHERE EMP_ID = $emp_id"; // <-------------------- YOUR TABLE NAME --------------------
+
+// Delete Data from Table Here
 if(mysqli_query($conn,$sql)){
-    echo "New Record Created Successfully";
+    echo " Record Deleted Successfully";
 }else{
     echo "Error :" . mysqli_error($conn);
 }
